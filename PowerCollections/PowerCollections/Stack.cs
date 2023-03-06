@@ -12,7 +12,7 @@ namespace PowerCollections
         public int Capacity; //Capacity - максимальный размер стека
         public T[] arr2;
 
-        public Stack(int size)
+        public Stack(int size = 100)
         {
             arr = new T[size];
             Capacity = size;
