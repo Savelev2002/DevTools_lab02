@@ -36,13 +36,10 @@
 # For a complete CI/CD sample to get started with GitHub Action workflows for Desktop Applications,
 # refer to https://github.com/microsoft/github-actions-for-desktop-apps
 
-name: .NET Core Desktop
+name: Release
 
-on:
-  push:
-    branches: [ "task03" ]
-  pull_request:
-    branches: [ "task03" ]
+on:workflow_dispatch
+
 
 jobs:
 
@@ -81,6 +78,20 @@ jobs:
     - name: Execute dotnet build
       run: dotnet build
       working-directory: "PowerCollections"
+      
+      
+      # build_nuget
+      build_nuget:
+
+      runs-on: windows-latest
+
+      permissions:
+      actions: write
+      deployments: write
+      repository-projects: write
+      packages: write
+      contents: write
+      id-token: write
 
 
 
