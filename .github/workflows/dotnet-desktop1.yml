@@ -77,6 +77,11 @@ jobs:
     - name: Execute dotnet pack
       run: dotnet pack
       working-directory: PowerCollections
+      
+      # push
+    - name: push
+      run: dotnet nuget push bin\Debug\*  --api-key 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 --source github_S --skip-duplicate
+      working-directory: PowerCollections
 
   
  
