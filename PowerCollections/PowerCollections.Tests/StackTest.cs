@@ -10,7 +10,7 @@ namespace PowerCollections.Tests
 {
     [TestClass]
     public class StackTest
-    {
+    
         [TestMethod]
         public void MaximumStackSize()
         {
