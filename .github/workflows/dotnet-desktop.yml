@@ -79,7 +79,15 @@ jobs:
       run: dotnet build
       working-directory: "PowerCollections"
       
-      
+ 
+
+      permissions:
+      actions: write
+      deployments: write
+      repository-projects: write
+      packages: write
+      contents: write
+      id-token: write
    
 
 
