@@ -8,7 +8,7 @@ jobs:
   runs-on: windows-latest
 
   permissions:
-   actions: write-all
+   actions: write
    deployments: write-all
    repository-projects: write-all
    packages: write-all
