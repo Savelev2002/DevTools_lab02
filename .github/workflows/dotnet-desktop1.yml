@@ -71,17 +71,13 @@ jobs:
     # Add  MSBuild to the PATH: https://github.com/microsoft/setup-msbuild
     - name: Setup MSBuild.exe
       uses: microsoft/setup-msbuild@v1.0.2
-     
 
-   # dotnet pack
-    - name: Execute dotnet pack
-      run: dotnet pack
-      working-directory: PowerCollections
+    # Execute all unit tests in the solution
+    - name: Execute unit tests
+      run: dotnet test
+      working-directory: "PowerCollections"
       
-      # push
-    - name: push
-      run: dotnet nuget push bin\Debug\*  --api-key ${{ secrets.GITHUB_TOKEN }} --source https://nuget.pkg.github.com/Savelev2002/index.json --skip-duplicate
-      working-directory: PowerCollections
-
-  
- 
+       # dotnet build
+    - name: Execute dotnet build
+      run: dotnet build
+      working-directory: "PowerCollections"
