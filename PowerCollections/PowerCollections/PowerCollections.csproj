@@ -6,7 +6,7 @@
 		<Deterministic>false</Deterministic>
 		
 		<PackageId>Savelev2002.PowerCollections</PackageId> 
-		<VersionPrefix>0.0.4</VersionPrefix>
+		<VersionPrefix>0.0.6</VersionPrefix>
 		<VersionSuffix>beta</VersionSuffix>		
 		<RepositoryUrl>https://github.com/Savelev2002/DevTools_lab02.git</RepositoryUrl>
 		
