@@ -41,8 +41,7 @@ name: .NET Core Desktop
 on:
   push:
     branches: [ "task03" ]
-  pull_request:
-    branches: [ "task03" ]
+
 
 jobs:
 
